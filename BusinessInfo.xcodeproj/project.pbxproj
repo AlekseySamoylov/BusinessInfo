@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9738E30F1D9FCE790019B6D5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738E30E1D9FCE790019B6D5 /* User.swift */; };
+		9738E3111D9FCF840019B6D5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738E3101D9FCF840019B6D5 /* Message.swift */; };
+		9738E3131D9FD6430019B6D5 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738E3121D9FD6430019B6D5 /* AuthenticationService.swift */; };
+		9738E3161D9FD9110019B6D5 /* AuthenticationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9738E3151D9FD9110019B6D5 /* AuthenticationServiceTest.swift */; };
 		97DE72081D9FA5CE006F068B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE72071D9FA5CE006F068B /* AppDelegate.swift */; };
 		97DE720A1D9FA5CE006F068B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE72091D9FA5CE006F068B /* ViewController.swift */; };
 		97DE720D1D9FA5CE006F068B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DE720B1D9FA5CE006F068B /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9738E30E1D9FCE790019B6D5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9738E3101D9FCF840019B6D5 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9738E3121D9FD6430019B6D5 /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		9738E3151D9FD9110019B6D5 /* AuthenticationServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceTest.swift; sourceTree = "<group>"; };
 		97DE72041D9FA5CE006F068B /* BusinessInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DE72071D9FA5CE006F068B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97DE72091D9FA5CE006F068B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9738E3141D9FD8F60019B6D5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9738E3151D9FD9110019B6D5 /* AuthenticationServiceTest.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		97DE71FB1D9FA5CE006F068B = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +130,7 @@
 		97DE721B1D9FA5CE006F068B /* BusinessInfoTests */ = {
 			isa = PBXGroup;
 			children = (
+				9738E3141D9FD8F60019B6D5 /* Service */,
 				97DE721C1D9FA5CE006F068B /* BusinessInfoTests.swift */,
 				97DE721E1D9FA5CE006F068B /* Info.plist */,
 			);
@@ -132,6 +149,7 @@
 		97DE72351D9FC6E6006F068B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9738E3121D9FD6430019B6D5 /* AuthenticationService.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -139,6 +157,8 @@
 		97DE72361D9FC6FD006F068B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9738E30E1D9FCE790019B6D5 /* User.swift */,
+				9738E3101D9FCF840019B6D5 /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -295,7 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				97DE720A1D9FA5CE006F068B /* ViewController.swift in Sources */,
+				9738E3111D9FCF840019B6D5 /* Message.swift in Sources */,
 				97DE72081D9FA5CE006F068B /* AppDelegate.swift in Sources */,
+				9738E30F1D9FCE790019B6D5 /* User.swift in Sources */,
+				9738E3131D9FD6430019B6D5 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97DE721D1D9FA5CE006F068B /* BusinessInfoTests.swift in Sources */,
+				9738E3161D9FD9110019B6D5 /* AuthenticationServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +572,7 @@
 				97DE722E1D9FA5CE006F068B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97DE722F1D9FA5CE006F068B /* Build configuration list for PBXNativeTarget "BusinessInfoTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +581,7 @@
 				97DE72311D9FA5CE006F068B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97DE72321D9FA5CE006F068B /* Build configuration list for PBXNativeTarget "BusinessInfoUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +590,7 @@
 				97DE72341D9FA5CE006F068B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
