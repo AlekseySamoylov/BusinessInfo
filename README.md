@@ -3,6 +3,9 @@
 <p><strong>На этой неделе мы занимаемся только лишь проектированием будущего приложения, свои идеи пишем ЗДЕСЬ!</strong></p>
 <p><strong>Проблема, которую должно решить наше приложение:</strong> Человек не может получить необходимую информацию об организации</p>
 
+<p>Полезные ссылки <br/> <a href="https://github.com/futurice/ios-good-practices">https://github.com/futurice/ios-good-practices</a></p>
+<p>http://swiftspace.org/xcode-project-structure-best-practice/</p>
+
 <h2>Взаимодействие комадны с проектом</h2>
 <pre>
 1. Заводим задачи здесь:
