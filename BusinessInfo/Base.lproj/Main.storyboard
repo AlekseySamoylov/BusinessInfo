@@ -1,26 +1,67 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BusinessInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO0-oK-UcI">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPh-Fn-azz">
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="writeTestField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gws-9a-DnC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTF-d2-nDq">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="c8U-1x-cCM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="checkTestFieldNotEmpty:" destination="BYZ-38-t0r" eventType="editingChanged" id="KQe-Ac-9NT"/>
+                                </connections>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pTF-d2-nDq" firstAttribute="centerX" secondItem="vPh-Fn-azz" secondAttribute="centerX" id="0Oy-3B-rAk"/>
+                            <constraint firstItem="GO0-oK-UcI" firstAttribute="centerX" secondItem="pTF-d2-nDq" secondAttribute="centerX" id="FXs-Zy-lhQ"/>
+                            <constraint firstItem="GO0-oK-UcI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="MTb-01-Ua9"/>
+                            <constraint firstItem="vPh-Fn-azz" firstAttribute="top" secondItem="pTF-d2-nDq" secondAttribute="bottom" constant="46" id="eFC-Tb-9y8"/>
+                            <constraint firstItem="GO0-oK-UcI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="hh6-R5-Eoe"/>
+                            <constraint firstItem="vPh-Fn-azz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="psE-BA-Psj"/>
+                            <constraint firstItem="pTF-d2-nDq" firstAttribute="top" secondItem="GO0-oK-UcI" secondAttribute="bottom" constant="53" id="sri-39-p1V"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="testButton" destination="vPh-Fn-azz" id="sir-Pq-JDE"/>
+                        <outlet property="testField" destination="pTF-d2-nDq" id="p2X-hS-20H"/>
+                        <outlet property="testLabel" destination="GO0-oK-UcI" id="lVi-7X-Bbl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>

@@ -97,6 +97,10 @@
 		97DE72061D9FA5CE006F068B /* BusinessInfo */ = {
 			isa = PBXGroup;
 			children = (
+				97DE72361D9FC6FD006F068B /* Model */,
+				97DE72381D9FC739006F068B /* View */,
+				97DE72371D9FC71E006F068B /* Controller */,
+				97DE72351D9FC6E6006F068B /* Service */,
 				97DE72071D9FA5CE006F068B /* AppDelegate.swift */,
 				97DE72091D9FA5CE006F068B /* ViewController.swift */,
 				97DE720B1D9FA5CE006F068B /* Main.storyboard */,
@@ -123,6 +127,34 @@
 				97DE72291D9FA5CE006F068B /* Info.plist */,
 			);
 			path = BusinessInfoUITests;
+			sourceTree = "<group>";
+		};
+		97DE72351D9FC6E6006F068B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		97DE72361D9FC6FD006F068B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		97DE72371D9FC71E006F068B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		97DE72381D9FC739006F068B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,10 +447,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7472D832U2;
 				INFOPLIST_FILE = BusinessInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alekseysamoylov.BusinessInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -428,10 +462,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7472D832U2;
 				INFOPLIST_FILE = BusinessInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alekseysamoylov.BusinessInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
