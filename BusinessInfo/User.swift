@@ -12,6 +12,18 @@ class User {
     var id: Int64?
     var username: String?
     var password: String?
+    private var _age: Int!
+
+    var age: Int {
+        if _age == nil {
+            _age = 0
+        }
+        return _age
+    }
+    
+    func setAge(age: Int) {
+        self._age = age
+    }
     
     init(id: Int64, username: String, password: String) {
         self.id = id

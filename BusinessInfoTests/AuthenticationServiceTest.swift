@@ -19,7 +19,7 @@ class AuthenticationServiceTest: XCTestCase {
     }
     
     func testLogin() {
-        user = authentication?.login(username: "user", password: "pass")
+        user = authentication?.login(username: "usr1", password: "pass1")
         XCTAssertNotNil(user)
     }
     

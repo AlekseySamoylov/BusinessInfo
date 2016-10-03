@@ -9,13 +9,24 @@
 import Foundation
 
 class AuthenticationService {
+    
+    var userArray: [User]! = [User(id: 1, username: "usr1", password: "pass1"),
+                             User(id: 2, username: "usr2", password: "pass2"),
+                             User(id: 3, username: "usr3", password: "pass3"),]
     func login(username: String, password: String) -> User {
-        var user: User!
+        var foundUser: User!
         // server dialog simulation
-        if (username == "user" && password == "pass") {
-            user = User(id: 1, username: "test_user", password: "test_password")
+        
+        if userArray != nil && userArray.count > 0 {
+            //Do anything
         }
-        return user
+        
+        for user in userArray {
+            if user.username == username && user.password == password {
+                foundUser =  user
+            }
+        }
+        return foundUser
     }
     
     
